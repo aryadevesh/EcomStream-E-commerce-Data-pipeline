@@ -15,11 +15,6 @@ As a Data Engineer for a fictional E-commerce startup, this project addresses th
 
 Since this is a fictional E-commerece Startup, the **Real-Time data stream** is generated using [this](/data/ecom-visitor-logs.py) python script. The script generates logs entires simulating either a visit to a product page or addition of a product into the shopping cart. If the log contains a `PID` value that is not `Null`, then it corresponds to a product added to the shopping cart. This generated web log is then published to a Kafka Topic which is then consumed by a Spark Streaming Application.
 
-A typical entry of a web log into the kafka topic looks like this.
-```
-
-```
-
 ## Data Flow Diagram
 ![Dataflowdiagram](/images/ecom-data-pipeline.svg)
 
